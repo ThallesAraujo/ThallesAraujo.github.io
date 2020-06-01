@@ -1,0 +1,53 @@
+@import 'config';
+
+@mixin flex-justification {
+    align-items: center;
+    justify-content: center;
+}
+
+.cards{
+
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    flex-flow: column;
+    background-color: $card-color;
+    border-radius: 20px;
+
+    .card{
+        text-align: center;
+        padding: 2em;
+
+        .card-icon{
+            display: flex;
+            @include flex-justification;
+            flex-direction: column;
+            padding: 1em;
+            .icon-container{
+                background-color: $accent-color;
+                display: flex;
+                @include flex-justification;
+                width: 70px;
+                height: 70px;
+                border-radius: 15px;
+                i{
+                    color: $card-color;
+                    font-size: 40px;
+                }
+            }
+        }
+
+        .card-title{
+            font-size: 2em;
+            color: $accent-color;
+            font-family: $secondary-font;
+            padding-top: 10px;
+        }
+
+        .desc-card-caption{
+            padding-top: 1em;
+            font-size: 1em;
+        }
+    }
+
+}

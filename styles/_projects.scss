@@ -1,0 +1,80 @@
+@mixin section-project {
+    .section-project{
+        display: flex;
+        padding: 1em;
+        .card-title{
+            font-size: 1.5em;
+            color: $accent-color;
+            font-family: $secondary-font;
+        }
+
+        .container-cta{
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+    
+        img{
+            border-radius: 40px;
+            margin-right: 1em;
+            width: 25vw;
+            height: 25vw;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+.projects{
+    display: flex;
+    flex-flow: column;
+    transition: all 1s ease-in-out;
+
+    @include section-project();
+}
+
+.container{
+    transition: height 1s ease-in-out;
+    display: none;
+
+    &.closed{
+        animation: fadeOut 0.5s;
+        animation-direction: top;
+    }
+
+    &.opened{
+        animation: fadeIn 0.5s;
+        animation-direction: bottom;
+    }
+
+    @include section-project();
+
+}
+
+.call-to-action{
+    padding: 2em;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100vh) scaleY(0);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0) scaleY(1);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        height: 1em;
+        transform: translateY(0) scaleY(1);
+    } 
+    100% {
+        opacity: 0;
+        transform: translateY(-100vh) scaleY(0);
+        height: 0;
+    }
+}
+

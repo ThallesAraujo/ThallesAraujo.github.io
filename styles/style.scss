@@ -1,0 +1,48 @@
+@import 'config';
+@import 'menu';
+@import 'bio';
+@import 'responsive';
+@import 'stacks';
+@import 'projects';
+@import 'button';
+@import 'footer';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $default-font-family;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: $background-color;
+    color: $text-color;
+    font-family: $default-font-family;
+    font-weight: 50;
+    height: 100vh;
+
+    .subtitle{
+        font-size: 3em;
+        color: $accent-color;
+        font-family: $secondary-font;
+        padding: 0 1rem;
+    }
+
+    .logo-container{
+        display: flex;
+        align-items: center;
+        .logo{
+            font-size: 30px;
+            font-family: "Rajdhani";
+            color: $accent-color;
+            padding-right: 5px;
+        }
+        
+        .second{
+            color: $text-color;
+            font-size: 20px;
+        }
+    }
+}
