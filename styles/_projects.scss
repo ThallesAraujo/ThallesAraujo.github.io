@@ -1,24 +1,30 @@
 @mixin section-project {
     .section-project{
-        display: flex;
         padding: 1em;
+
         .card-title{
             font-size: 1.5em;
             color: $accent-color;
             font-family: $secondary-font;
+            font-style: normal;
         }
 
         .container-cta{
             margin-top: 5%;
             margin-bottom: 5%;
+
+            button{
+                width: 100%;
+            }
+
         }
     
         img{
-            border-radius: 40px;
+            border-radius: 12px;
             margin-right: 1em;
-            width: 25vw;
-            height: 25vw;
-            object-fit: cover;
+            width: 90vw;
+            height: 90vw;
+            object-fit: contain;
             object-position: center;
         }
     }

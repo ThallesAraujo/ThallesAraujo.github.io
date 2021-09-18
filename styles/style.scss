@@ -14,6 +14,7 @@
     font-family: $default-font-family;
     outline: none;
     scroll-behavior: smooth;
+    font-style: italic;
 }
 
 body{
@@ -27,6 +28,7 @@ body{
         font-size: 3em;
         color: $accent-color;
         font-family: $secondary-font;
+        font-style: normal;
         padding: 0 1rem;
     }
 
@@ -35,14 +37,17 @@ body{
         align-items: center;
         .logo{
             font-size: 30px;
-            font-family: "Rajdhani";
+            font-family: $secondary-font;
             color: $accent-color;
             padding-right: 5px;
+            font-style: normal;
         }
         
         .second{
             color: $text-color;
+            padding-top: 5px;
             font-size: 20px;
+            font-style: normal;
         }
     }
 }

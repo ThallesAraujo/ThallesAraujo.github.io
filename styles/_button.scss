@@ -2,10 +2,12 @@ button {
     position: relative;
     padding: 1em;
     font-size: 16px;
-    border-radius: 25px;
+    border-radius: 8px;
     text-decoration: none;
     align-self: center;
     color: $accent-color;
+    
+    font-style: normal;
     border: 2px solid $accent-color!important;
     background: none;
     z-index: 1;
@@ -32,7 +34,7 @@ button {
     width: 0;
     height: 0;
     z-index: -1;
-    border-radius: 25px;
+    border-radius: 8px;
     transition: ease-in-out .5s;
     transform: scale(1) translateX(-50%) translateY(-50%);
   }

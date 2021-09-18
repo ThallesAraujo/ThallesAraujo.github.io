@@ -10,6 +10,7 @@ footer{
         font-size: 1.5em;
         color: $accent-color;
         font-family: $secondary-font;
+        font-style: normal;
     }
 
     .footer-icons{
@@ -26,7 +27,7 @@ footer{
             @include flex-justification;
             width: 50px;
             height: 50px;
-            border-radius: 15px;
+            border-radius: 8px;
             transition: ease-in-out .5s;
             transform: scale(1) translateX(-50%) translateY(-50%);
 
@@ -41,7 +42,7 @@ footer{
                 width: 0;
                 height: 0;
                 z-index: -1;
-                border-radius: 15px;
+                border-radius: 8px;
                 transition: ease-in-out .3s;
                 transform: scale(1) translateX(-50%) translateY(-50%);
               }

@@ -11,9 +11,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap" rel="stylesheet">
     <link href='https://css.gg/css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 
 <body>
@@ -52,10 +58,12 @@
                     <p class="bio-subtitle">Seja bem vindo a minha página!</p>
                     <p class="bio-caption">Meu nome é Thalles Henrique do Nascimento Araújo e eu sou formado em
                         Análise e Desenvolvimento de Sistemas pelo IFPB Campus Monteiro.
-                        Sou brasiliense (natural do Gama) e atualmente resido em Sertânia, Pernambuco. Atuo como
-                        desenvolvedor de software, trabalhando principalmente com JavaScript, Swift e Python; e
-                        sou um grande fã de design de interfaces. Abaixo, tem mais algumas informações a meu respeito:
+                        Sou brasiliense (natural do Gama) e atualmente resido em Sertânia, Pernambuco. Atuo como desenvolvedor iOS e UX designer amador.
                     </p>
+                    <div class="cta-buttons">
+                        <button class="fill" onclick="window.open('https://github.com/ThallesAraujo/CodeHero')" >Perfil no LinkedIn</button>
+                        <button class="fill" onclick="window.open('https://github.com/ThallesAraujo/CodeHero')" >Mensagem no Telegram</button>
+                    </div>
                 </div>
         </section>
 
@@ -64,19 +72,18 @@
                     <div class="card">
                         <div class="card-icon">
                             <div class="icon-container">
-                                <i class="fas fa-code"></i>
+                                <i class="uil uil-apple-alt"></i>
                             </div>
-                            <p class="card-title">Front-End/Mobile Development</p>
+                            <p class="card-title">Desenvolvimento iOS</p>
                         </div>
                         <p class="desc-card-caption">
-                            Desenvolvo aplicações com enfoque na User Experience (UX),
-                            utilizando tecnologias "bleeding-edge". Atuo como desenvolvedor front-end e mobile.
+                            Desenvolvo aplicações iOS com enfoque na User Experience (UX), com o uso de UIKit e/ou SwiftUI.
                         </p>
                     </div>
                     <div class="card">
                         <div class="card-icon">
                             <div class="icon-container">
-                                <i class="fas fa-project-diagram"></i>
+                                <i class="uil uil-vector-square"></i>
                             </div>
                             <p class="card-title">Análise de Sistemas</p>
                         </div>
@@ -89,13 +96,12 @@
                     <div class="card">
                         <div class="card-icon">
                             <div class="icon-container">
-                                <i class="fas fa-flask"></i>
+                                <i class="uil uil-flask"></i>
                             </div>
-                            <p class="card-title">Testes de Software</p>
+                            <p class="card-title">Testes de Software (iOS)</p>
                         </div>
                         <p class="desc-card-caption">
-                            Tenho experiência com testes unitários e automatizados em Java (JUnit), Swift(KIF, Quick/Nimble, OHTTPStubs, Cuckoo) e para aplicações web (Selenium).
-                            Também posso elaborar planos de testes manuais baseados na matriz de casos de uso do sistema.
+                            Tenho experiência com testes unitários e automatizados Swiftm, utilizando KIF, Nimble, OHTTPStubs, Cuckoo e Atlantis+Proxyman
                         </p>
                     </div>
             </section>
@@ -104,8 +110,35 @@
                 <p class="subtitle">Projetos</p>
         
                 <div class="projects">
+
                     <div class="section-project">
-                        <img src="./assets/code_hero_screenshot.png" class="img-desc" alt="profile" />
+                        <img src="https://github.com/ThallesAraujo/Sputnik/blob/main/screenshots.png?raw=true" class="img-desc" alt="profile" />
+                        <div class="project-container">
+                            <p class="card-title">Sputnik Browser</p>
+                            <p class="desc-card-caption">
+                                Navegador Web com foco na utilização single-handed (com uma mão só)
+                            </p>
+                           <div class="container-cta">
+                                <button class="fill" onclick="window.open('https://github.com/ThallesAraujo/Sputnik')" >Ver projeto</button>
+                           </div>
+                        </div>
+                    </div>
+
+                    <div class="section-project">
+                        <img src="https://github.com/ThallesAraujo/Pokedex-Swift/raw/main/screenshot.png" class="img-desc" alt="profile" />
+                        <div class="project-container">
+                            <p class="card-title">Pokedex-Swift</p>
+                            <p class="desc-card-caption">
+                                Aplicação para busca e listagem de Pokémons utilizando a Poke-Api
+                            </p>
+                           <div class="container-cta">
+                                <button class="fill" onclick="window.open('https://github.com/ThallesAraujo/Pokedex-Swift')" >Ver projeto</button>
+                           </div>
+                        </div>
+                    </div>
+
+                    <div class="section-project">
+                        <img src="https://github.com/ThallesAraujo/CodeHero/raw/master/screenshots/screenshot.png" class="img-desc" alt="profile" />
                         <div class="project-container">
                             <p class="card-title">Code HERO</p>
                             <p class="desc-card-caption">
@@ -118,7 +151,7 @@
                     </div>
         
                     <div class="section-project">
-                        <img src="./assets/movielist-light.png" class="img-desc" alt="profile" />
+                        <img src="https://github.com/ThallesAraujo/iOS-Challenge/raw/master/screenshots/movielist-light.png" class="img-desc" alt="profile" />
                         <div class="project-container">
                             <p class="card-title">Movie Time</p>
                             <p class="desc-card-caption">
@@ -126,31 +159,6 @@
                             </p>
                            <div class="container-cta">
                                 <button class="fill" onclick="window.open('https://github.com/ThallesAraujo/iOS-Challenge')" >Ver projeto</button>
-                           </div>
-                        </div>
-                    </div>
-        
-                    <div class="section-project">
-                        <img src="assets/novolar-screenshot.png" class="img-desc" alt="profile" />
-                        <div class="project-container">
-                            <p class="card-title">Novolar</p>
-                            <p class="desc-card-caption">
-                                Sistema de listagem de imóveis desenvolvido em React
-                            </p>
-                           <div class="container-cta">
-                                <button class="fill" onclick="window.open('https://github.com/ThallesAraujo/novolar')" >Ver projeto</button>
-                           </div>
-                        </div>
-                    </div>
-                    <div class="section-project">
-                        <img src="./assets/github-viewer-screenshot.png" class="img-desc" alt="profile" />
-                        <div class="project-container">
-                            <p class="card-title">GitHub Viewer</p>
-                            <p class="desc-card-caption">
-                                Aplicação para visualização de perfis do GitHub (via Username)
-                            </p>
-                           <div class="container-cta">
-                                <button class="fill" onclick="window.open('https://github.com/ThallesAraujo/GitHub-Viewer')" >Ver projeto</button>
                            </div>
                         </div>
                     </div>
@@ -167,19 +175,19 @@
                            </div>
                         </div>
                     </div>
-        
                     <div class="section-project">
-                        <img src="./assets/the_flashlighter_screenshot.png" class="img-desc" alt="profile" />
+                        <img src="https://github.com/ThallesAraujo/GitHub-Viewer/raw/master/Screenshots/github-viewer-screenshot.png" class="img-desc" alt="profile" />
                         <div class="project-container">
-                            <p class="card-title">The Flashlighter</p>
+                            <p class="card-title">GitHub Viewer</p>
                             <p class="desc-card-caption">
-                                Aplicativo Android de lanterna para demonstração do padrão GoF Singleton
+                                Aplicação para visualização de perfis do GitHub (via Username)
                             </p>
                            <div class="container-cta">
-                                <button class="fill" onclick="window.open('https://github.com/ThallesAraujo/The-Flashlighter')" >Ver projeto</button>
+                                <button class="fill" onclick="window.open('https://github.com/ThallesAraujo/GitHub-Viewer')" >Ver projeto</button>
                            </div>
                         </div>
                     </div>
+        
             </section>
             <section>
                 <div class="call-to-action" style="text-align: center">
@@ -194,22 +202,22 @@
                     <p class="footer-subtitle">Então sinta-se à vontade para entrar em contato</p>
                     <div class="contatos">
                         <p>thalleshenrique.na@gmail.com</p>
-                        <p>(87) 9 8806-0471</p>
+                        <p>(87) 9 9204-9070</p>
                     </div>
                 </div>
 
                 <div class="footer-icons">
                     <a href="https://www.linkedin.com/in/thalleshenrique/" class="social">
-                        <i class="fab fa-linkedin"></i>
+                        <i class="uil uil-linkedin-alt"></i>
                     </a>
                     <a href="https://github.com/ThallesAraujo" class="social">
-                        <i class="fab fa-github"></i>
+                        <i class="uil uil-github-alt"></i>
                     </a>
                     <a href="https://www.instagram.com/thalleshnaraujo/" class="social">
-                        <i class="fab fa-instagram"></i>
+                        <i class="uil uil-instagram"></i>
                     </a>
-                    <a href="https://api.whatsapp.com/send?phone=+5587988060471" class="social">
-                        <i class="fab fa-whatsapp"></i>
+                    <a href="https://telegram.me/thallesaraujo" class="social">
+                        <i class="uil uil-telegram-alt"></i>
                     </a>
 
                 </div>

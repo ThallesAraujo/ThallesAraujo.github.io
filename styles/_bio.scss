@@ -28,6 +28,8 @@
             .bio-subtitle{
                 padding: 0.5em 0;
                 font-size: 2.5em;
+                font-weight: 300;
+                font-style: normal;
             }
 
             .bio-caption{
@@ -39,8 +41,19 @@
     }
 }
 
+.cta-buttons{
+    display: flex;
+    padding-top: 20px;
+    .fill:nth-child(1){
+       margin-right: 20px;
+    }
+}
+
+
 .title{
     color: #c9faf3;
     font-size: 5em;
+    font-style: normal;
     font-family: $secondary-font;
+    font-style: normal;
 }
