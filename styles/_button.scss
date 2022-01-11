@@ -1,9 +1,12 @@
 button {
     position: relative;
-    padding: 1em;
-    font-size: 16px;
-    border-radius: 8px;
+    padding: 12px 32px 12px 32px;
+    font-size: 18px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     text-decoration: none;
+    text-transform: uppercase;
+    font-family: $secondary-font;
     align-self: center;
     color: $accent-color;
     
@@ -34,7 +37,8 @@ button {
     width: 0;
     height: 0;
     z-index: -1;
-    border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     transition: ease-in-out .5s;
     transform: scale(1) translateX(-50%) translateY(-50%);
   }

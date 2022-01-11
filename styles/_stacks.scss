@@ -7,22 +7,36 @@
 
 .cards{
 
-    padding: 1em;
-    margin: 1em;
     display: flex;
     flex-flow: column;
     background-color: $card-color;
-    border-radius: 20px;
+    padding: 1em;
+
+    .separator{
+        background-color: $accent-color;
+        height: 2px;
+        margin: 8px;
+    }
 
     .card{
-        text-align: center;
-        padding: 2em;
+        text-align: left;
+        padding: 4px;
+        display: flex;
+
+        .card-content{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            margin-left: 2em;
+            justify-content: flex-end;
+        }
 
         .card-icon{
             display: flex;
-            @include flex-justification;
             flex-direction: column;
             padding: 1em;
+            align-content: flex-end;
+            align-items: flex-end;
             .icon-container{
                 background-color: $accent-color;
                 display: flex;
@@ -39,10 +53,16 @@
 
         .card-title{
             font-size: 2em;
+            text-transform: uppercase;
             color: $accent-color;
             font-family: $secondary-font;
             font-style: normal;
-            padding-top: 10px;
+            text-orientation: mixed;
+            writing-mode: vertical-rl;
+            text-align: left;
+            height: 30%;
+            margin-top: 3em;
+            transform: rotate(180deg);
         }
 
         .desc-card-caption{

@@ -8,16 +8,11 @@
     <link rel="stylesheet" href="./styles/style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+   
     <link href='https://css.gg/css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
@@ -26,8 +21,7 @@
     <header>
         <div class="navbar-container">
             <div class="logo-container">
-                <div class="logo">Thalles</div>
-                <div class="second">Araújo</div>
+                <img src="./assets/new-logo.svg" alt="Thalles Araújo">
             </div>
             <div class="menu-btn">
                 <span class="menu-btn-burger"></span>
@@ -51,18 +45,18 @@
     <main>
         <section class="bio">
             <div class="bio-container" id="Sobre">
-                <img src="./assets/profile.jpg" class="img-desc" alt="profile" />
+                <div class="profile-image-container">
+                    <img src="./assets/profile.png" class="img-desc" alt="profile" />
+                </div>
                 <div class="bio-text">
                     <img src="./assets/undraw_progressive_app.svg" alt="" class="bio-background">
                     <p class="title">Olá!</p>
                     <p class="bio-subtitle">Seja bem vindo a minha página!</p>
-                    <p class="bio-caption">Meu nome é Thalles Henrique do Nascimento Araújo e eu sou formado em
-                        Análise e Desenvolvimento de Sistemas pelo IFPB Campus Monteiro.
-                        Sou brasiliense (natural do Gama) e atualmente resido em Sertânia, Pernambuco. Atuo como desenvolvedor iOS e UX designer amador.
+                    <p class="bio-caption">Meu nome é Thalles Henrique do Nascimento Araújo e eu sou formado em Análise e Desenvolvimento de Sistemas pelo IFPB Campus Monteiro. Sou brasiliense (natural do Gama) e atualmente resido em Sertânia, Pernambuco. Atuo como desenvolvedor iOS e UX designer amador.
                     </p>
                     <div class="cta-buttons">
-                        <button class="fill" onclick="window.open('https://github.com/ThallesAraujo/CodeHero')" >Perfil no LinkedIn</button>
-                        <button class="fill" onclick="window.open('https://github.com/ThallesAraujo/CodeHero')" >Mensagem no Telegram</button>
+                        <button class="fill" onclick="window.open('https://www.linkedin.com/in/thalleshenrique/')" >LinkedIn</button>
+                        <button class="fill" onclick="window.open('https://github.com/ThallesAraujo/CodeHero')" >Telegram</button>
                     </div>
                 </div>
         </section>
@@ -70,40 +64,56 @@
         <section id="Stacks"></div>
                 <div class="cards">
                     <div class="card">
-                        <div class="card-icon">
-                            <div class="icon-container">
-                                <i class="uil uil-apple-alt"></i>
+                        <p class="card-title">Desenvolvimento iOS</p>
+                        <div class="card-content">
+                            <div class="card-icon">
+                                <div class="icon-container">
+                                    <i class="uil uil-apple-alt"></i>
+                                </div>
                             </div>
-                            <p class="card-title">Desenvolvimento iOS</p>
+                            <p class="desc-card-caption">
+                                Desenvolvo aplicações iOS com enfoque na User Experience (UX), com o uso de UIKit e/ou SwiftUI.
+                            </p>
                         </div>
-                        <p class="desc-card-caption">
-                            Desenvolvo aplicações iOS com enfoque na User Experience (UX), com o uso de UIKit e/ou SwiftUI.
-                        </p>
+                       
                     </div>
+
+                    <div class="separator"></div>
+
                     <div class="card">
-                        <div class="card-icon">
-                            <div class="icon-container">
-                                <i class="uil uil-vector-square"></i>
+                        <p class="card-title">UI/UX Design</p>
+                        <div class="card-content">
+                            <div class="card-icon">
+                                <div class="icon-container">
+                                    <i class="uil uil-apple-alt"></i>
+                                </div>
                             </div>
-                            <p class="card-title">Análise de Sistemas</p>
+                            <p class="desc-card-caption">
+                                Desenvolvo aplicações iOS com enfoque na User Experience (UX), com o uso de UIKit e/ou SwiftUI.
+                            </p>
                         </div>
-                        <p class="desc-card-caption">
-                            Posso realizar a análise e produzir artefatos de especificação de software, tais como diagrama de
-                            classes,
-                            matriz de requisitos, protótipos de média/alta fidelidade e casos de uso.
-                        </p>
+                        
                     </div>
+
+                    <div class="separator"></div>
+
                     <div class="card">
-                        <div class="card-icon">
-                            <div class="icon-container">
-                                <i class="uil uil-flask"></i>
+                        <p class="card-title">Análise de Sistemas</p>
+                        <div class="card-content">
+                           
+                            <div class="card-icon">
+                                <div class="icon-container">
+                                    <i class="uil uil-apple-alt"></i>
+                                </div>
                             </div>
-                            <p class="card-title">Testes de Software (iOS)</p>
+                            <p class="desc-card-caption">
+                                Desenvolvo aplicações iOS com enfoque na User Experience (UX), com o uso de UIKit e/ou SwiftUI.
+                            </p>
                         </div>
-                        <p class="desc-card-caption">
-                            Tenho experiência com testes unitários e automatizados Swift, utilizando KIF, Nimble, OHTTPStubs, Cuckoo e Atlantis+Proxyman
-                        </p>
+                       
                     </div>
+
+                    
             </section>
 
             <section id="Projetos">
