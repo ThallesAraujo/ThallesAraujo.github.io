@@ -8,6 +8,10 @@
         flex-flow: column wrap;
         align-items: center;
 
+        .name-title{
+            display: none;
+        }
+
         .profile-image-container{
             background-color: $card-color;
             border-top-left-radius: 2rem;

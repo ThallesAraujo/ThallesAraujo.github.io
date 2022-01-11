@@ -67,6 +67,14 @@
 
     .bio{
         width: 100%;
+
+        .title{
+            font-size: 60px!important;
+        }
+
+        .bio-subtitle{
+            font-size: 36!important;
+        }
     
         .bio-container{
             padding: 1em;
@@ -75,16 +83,27 @@
             flex-flow: row nowrap;
             align-items: center;
 
-            .bio-background{
+            .profile-image-container{
+                background-color: transparent!important;
+            }
+
+            .bio-caption{
+                font-size: 24px!important;
+                line-height: 32px!important;
+                padding-right: 12vw!important;
+            }
+
+            .name-title{
                 display: block!important;
-                position: absolute;
                 z-index: -1;
-                width: 100%;
-                height: 110%;
-                top: 5%;
-                left: 0;
-                object-fit: cover;
-                overflow: hidden;
+                position: absolute;
+                text-align: right;
+                margin-right: 0.5em;
+                font-family: $secondary-font;
+                font-size: 13vw;
+                line-height: 0.8em;
+                color: rgba($color: #D8FF98, $alpha: 0.25)
+    
             }
     
             img{
@@ -102,12 +121,27 @@
     }
 
     .cards{
-        padding: 3em!important;
-        display: grid!important;
-        grid-template-columns: repeat(3, 1fr);
+        
+        display: flex;
+        flex-direction: row!important;
+
+        .card{
+            width: 33vw;
+
+            &-title{
+                font-size: 3em!important;
+            }
+        }
+        
+
+        .separator{
+            width: 2px;
+            height: auto !important;
+            margin: 2px!important;
+        }
 
         .desc-card-caption{
-            font-size: 2em;
+            font-size: 1.5em!important;
         }
 
     }
@@ -126,9 +160,6 @@
                 height: 20vw!important;
             }
 
-            button{
-                width: 30%!important;
-            }
         }
     }
 

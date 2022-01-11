@@ -1,0 +1,20 @@
+<svg id="Grupo_39" data-name="Grupo 39" xmlns="http://www.w3.org/2000/svg" width="80" height="107.988" viewBox="0 0 80 107.988">
+  <g id="Grupo_16" data-name="Grupo 16">
+    <path id="Subtração_1" data-name="Subtração 1" d="M15,23.908a15,15,0,0,1-15-15V0A35.467,35.467,0,0,0,15,3.325,35.472,35.472,0,0,0,30,0V8.907a15,15,0,0,1-15,15Z" transform="translate(25 84.081)" fill="#92a76f"/>
+    <circle id="Elipse_2" data-name="Elipse 2" cx="40" cy="40" r="40" fill="#8ca06c"/>
+  </g>
+  <g id="Grupo_20" data-name="Grupo 20" transform="translate(26.067 64.722) rotate(-90)">
+    <g id="Grupo_17" data-name="Grupo 17">
+      <path id="Caminho_12" data-name="Caminho 12" d="M4.75,0A4.75,4.75,0,0,1,9.5,4.75v.5a4.75,4.75,0,0,1-9.5,0v-.5A4.75,4.75,0,0,1,4.75,0Z" fill="#64734c"/>
+      <path id="Caminho_3" data-name="Caminho 3" d="M0,0S.666,19.889,19.793,19.865,39.006,0,39.006,0" transform="translate(4.477 5)" fill="none" stroke="#64734c" stroke-width="4"/>
+      <path id="Caminho_11" data-name="Caminho 11" d="M4.75,0A4.75,4.75,0,0,1,9.5,4.75v.5a4.75,4.75,0,0,1-9.5,0v-.5A4.75,4.75,0,0,1,4.75,0Z" transform="translate(38.5)" fill="#64734c"/>
+    </g>
+    <g id="Grupo_19" data-name="Grupo 19" transform="translate(0 21.865)">
+      <path id="Caminho_6" data-name="Caminho 6" d="M3,0A3,3,0,1,1,0,3,3,3,0,0,1,3,0Z" fill="#64734c"/>
+      <g id="Grupo_18" data-name="Grupo 18" transform="translate(2.75)">
+        <path id="Caminho_9" data-name="Caminho 9" d="M3,0A3,3,0,1,1,0,3,3,3,0,0,1,3,0Z" transform="translate(39.25)" fill="#64734c"/>
+        <path id="Caminho_8" data-name="Caminho 8" d="M0,0H43" transform="translate(0 3.25)" fill="none" stroke="#64734c" stroke-width="4"/>
+      </g>
+    </g>
+  </g>
+</svg>

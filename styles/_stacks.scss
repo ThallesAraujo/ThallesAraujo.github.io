@@ -13,14 +13,14 @@
     padding: 1em;
 
     .separator{
-        background-color: $accent-color;
+        background-color: $card-title-color;
         height: 2px;
         margin: 8px;
     }
 
     .card{
         text-align: left;
-        padding: 4px;
+        padding: 1em;
         display: flex;
 
         .card-content{
@@ -28,7 +28,7 @@
             flex-direction: column;
             text-align: left;
             margin-left: 2em;
-            justify-content: flex-end;
+            justify-content: space-between;
         }
 
         .card-icon{
@@ -38,7 +38,7 @@
             align-content: flex-end;
             align-items: flex-end;
             .icon-container{
-                background-color: $accent-color;
+                
                 display: flex;
                 @include flex-justification;
                 width: 70px;
@@ -54,20 +54,21 @@
         .card-title{
             font-size: 2em;
             text-transform: uppercase;
-            color: $accent-color;
+            color: $card-title-color;
             font-family: $secondary-font;
             font-style: normal;
             text-orientation: mixed;
             writing-mode: vertical-rl;
             text-align: left;
             height: 30%;
-            margin-top: 3em;
+            
             transform: rotate(180deg);
         }
 
         .desc-card-caption{
             padding-top: 1em;
             font-size: 1em;
+            color: $tertiary-text-color;
         }
     }
 

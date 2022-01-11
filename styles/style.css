@@ -14,7 +14,7 @@ header .navbar-container {
 }
 
 header .navbar-container.solid-nav {
-  background-color: rgba(64, 64, 64, 0.5) !important;
+  background-color: rgba(64, 64, 64, 0.8) !important;
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
   -webkit-transition: background-color 0.2s linear;
@@ -151,15 +151,16 @@ header .menu-btn-burger.open::after {
 
 .nav .menu-nav-link {
   text-decoration: none;
-  color: white;
+  color: #ADCC7A;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   font-weight: 400;
-  font-style: normal;
+  text-transform: uppercase;
+  font-family: "Urbanist";
 }
 
 .nav .menu-nav-link.active {
-  color: #ADCC7A;
+  color: white;
 }
 
 .nav .menu-nav-link::after {
@@ -167,7 +168,7 @@ header .menu-btn-burger.open::after {
   display: block;
   width: 0;
   height: 2px;
-  background: #ADCC7A;
+  background: white;
   -webkit-transition: width .3s;
   transition: width .3s;
 }
@@ -177,7 +178,7 @@ header .menu-btn-burger.open::after {
 }
 
 .nav .menu-nav-link:hover {
-  color: #ADCC7A;
+  color: white;
 }
 
 .menu-nav-item:nth-child(1) {
@@ -207,6 +208,10 @@ header .menu-btn-burger.open::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.bio .bio-container .name-title {
+  display: none;
 }
 
 .bio .bio-container .profile-image-container {
@@ -310,6 +315,12 @@ header .menu-btn-burger.open::after {
   .bio {
     width: 100%;
   }
+  .bio .title {
+    font-size: 60px !important;
+  }
+  .bio .bio-subtitle {
+    font-size: 36 !important;
+  }
   .bio .bio-container {
     padding: 1em;
     height: 100vh;
@@ -324,17 +335,24 @@ header .menu-btn-burger.open::after {
         -ms-flex-align: center;
             align-items: center;
   }
-  .bio .bio-container .bio-background {
+  .bio .bio-container .profile-image-container {
+    background-color: transparent !important;
+  }
+  .bio .bio-container .bio-caption {
+    font-size: 24px !important;
+    line-height: 32px !important;
+    padding-right: 12vw !important;
+  }
+  .bio .bio-container .name-title {
     display: block !important;
-    position: absolute;
     z-index: -1;
-    width: 100%;
-    height: 110%;
-    top: 5%;
-    left: 0;
-    -o-object-fit: cover;
-       object-fit: cover;
-    overflow: hidden;
+    position: absolute;
+    text-align: right;
+    margin-right: 0.5em;
+    font-family: "Urbanist";
+    font-size: 13vw;
+    line-height: 0.8em;
+    color: rgba(216, 255, 152, 0.25);
   }
   .bio .bio-container img {
     width: 60vh;
@@ -345,14 +363,27 @@ header .menu-btn-burger.open::after {
     padding-left: 1em;
   }
   .cards {
-    padding: 3em !important;
-    display: -ms-grid !important;
-    display: grid !important;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .cards .card {
+    width: 33vw;
+  }
+  .cards .card-title {
+    font-size: 3em !important;
+  }
+  .cards .separator {
+    width: 2px;
+    height: auto !important;
+    margin: 2px !important;
   }
   .cards .desc-card-caption {
-    font-size: 2em;
+    font-size: 1.5em !important;
   }
   .projects {
     padding: 3em !important;
@@ -367,9 +398,6 @@ header .menu-btn-burger.open::after {
   .projects .section-project img {
     width: 20vw !important;
     height: 20vw !important;
-  }
-  .projects .section-project button {
-    width: 30% !important;
   }
   .container.opened {
     padding: 3em !important;
@@ -409,14 +437,14 @@ header .menu-btn-burger.open::after {
 }
 
 .cards .separator {
-  background-color: #ADCC7A;
+  background-color: #8CA06C;
   height: 2px;
   margin: 8px;
 }
 
 .cards .card {
   text-align: left;
-  padding: 4px;
+  padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,9 +460,9 @@ header .menu-btn-burger.open::after {
           flex-direction: column;
   text-align: left;
   margin-left: 2em;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .cards .card .card-icon {
@@ -454,7 +482,6 @@ header .menu-btn-burger.open::after {
 }
 
 .cards .card .card-icon .icon-container {
-  background-color: #ADCC7A;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -477,7 +504,7 @@ header .menu-btn-burger.open::after {
 .cards .card .card-title {
   font-size: 2em;
   text-transform: uppercase;
-  color: #ADCC7A;
+  color: #8CA06C;
   font-family: "Urbanist";
   font-style: normal;
   text-orientation: mixed;
@@ -486,7 +513,6 @@ header .menu-btn-burger.open::after {
           writing-mode: vertical-rl;
   text-align: left;
   height: 30%;
-  margin-top: 3em;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -494,6 +520,7 @@ header .menu-btn-burger.open::after {
 .cards .card .desc-card-caption {
   padding-top: 1em;
   font-size: 1em;
+  color: #CCCCCC;
 }
 
 .projects {
