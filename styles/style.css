@@ -24,7 +24,7 @@ header .navbar-container.solid-nav {
 header .menu-btn {
   position: absolute;
   z-index: 1;
-  right: 0rem;
+  right: 1rem;
   top: 2rem;
   height: 100px;
   width: 30px;
