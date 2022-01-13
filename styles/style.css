@@ -339,7 +339,7 @@ header .menu-btn-burger.open::after {
     background-color: transparent !important;
   }
   .bio .bio-container .bio-caption {
-    font-size: 24px !important;
+    font-size: 18px !important;
     line-height: 32px !important;
     padding-right: 12vw !important;
   }
@@ -375,7 +375,7 @@ header .menu-btn-burger.open::after {
     width: 33vw;
   }
   .cards .card-title {
-    font-size: 3em !important;
+    font-size: 2.5rem !important;
   }
   .cards .separator {
     width: 2px;
@@ -383,21 +383,20 @@ header .menu-btn-burger.open::after {
     margin: 2px !important;
   }
   .cards .desc-card-caption {
-    font-size: 1.5em !important;
+    font-size: 1.2rem !important;
   }
   .projects {
-    padding: 3em !important;
     display: -ms-grid !important;
     display: grid !important;
-    -ms-grid-columns: (3fr)[3];
-        grid-template-columns: repeat(3, 3fr);
+    -ms-grid-columns: (50%)[auto-fill];
+        grid-template-columns: repeat(auto-fill, 50%);
   }
   .projects .section-project {
-    text-align: center;
+    margin: 3em !important;
   }
-  .projects .section-project img {
-    width: 20vw !important;
-    height: 20vw !important;
+  .projects .section-project .project-container img {
+    width: 32vw !important;
+    height: 32vw !important;
   }
   .container.opened {
     padding: 3em !important;
@@ -537,25 +536,40 @@ header .menu-btn-burger.open::after {
 
 .projects .section-project {
   padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .projects .section-project .card-title {
-  font-size: 1.5em;
+  font-size: 10vh;
+  height: 20%;
+  margin-left: auto;
+  line-height: 0.8em;
   color: #ADCC7A;
   font-family: "Urbanist";
+  text-orientation: mixed;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
   font-style: normal;
+  text-shadow: 1px 5px 10px #404040;
 }
 
-.projects .section-project .container-cta {
+.projects .section-project .project-container {
+  width: 60vw;
+}
+
+.projects .section-project .project-container .container-cta {
   margin-top: 5%;
   margin-bottom: 5%;
 }
 
-.projects .section-project .container-cta button {
+.projects .section-project .project-container .container-cta button {
   width: 100%;
 }
 
-.projects .section-project img {
+.projects .section-project .project-container img {
   border-radius: 12px;
   margin-right: 1em;
   width: 90vw;
@@ -588,25 +602,40 @@ header .menu-btn-burger.open::after {
 
 .container .section-project {
   padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .container .section-project .card-title {
-  font-size: 1.5em;
+  font-size: 10vh;
+  height: 20%;
+  margin-left: auto;
+  line-height: 0.8em;
   color: #ADCC7A;
   font-family: "Urbanist";
+  text-orientation: mixed;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
   font-style: normal;
+  text-shadow: 1px 5px 10px #404040;
 }
 
-.container .section-project .container-cta {
+.container .section-project .project-container {
+  width: 60vw;
+}
+
+.container .section-project .project-container .container-cta {
   margin-top: 5%;
   margin-bottom: 5%;
 }
 
-.container .section-project .container-cta button {
+.container .section-project .project-container .container-cta button {
   width: 100%;
 }
 
-.container .section-project img {
+.container .section-project .project-container img {
   border-radius: 12px;
   margin-right: 1em;
   width: 90vw;
@@ -841,10 +870,11 @@ body {
 
 body .subtitle {
   font-size: 3em;
+  text-transform: uppercase;
   color: #ADCC7A;
   font-family: "Urbanist";
   font-style: normal;
-  padding: 0 1rem;
+  padding: 1rem 1rem;
 }
 
 body .logo-container {

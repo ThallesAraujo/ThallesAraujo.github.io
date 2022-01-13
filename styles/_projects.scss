@@ -1,32 +1,48 @@
 @mixin section-project {
     .section-project{
         padding: 1em;
+        display: flex;
 
         .card-title{
-            font-size: 1.5em;
+            font-size: 10vh;
+            height: 20%;
+            margin-left: auto;
+            line-height: 0.8em;
             color: $accent-color;
             font-family: $secondary-font;
+            text-orientation: mixed;
+            writing-mode: vertical-rl;
             font-style: normal;
+            text-shadow: 1px 5px 10px $background-color;
+            
         }
 
-        .container-cta{
-            margin-top: 5%;
-            margin-bottom: 5%;
+        .project-container{
 
-            button{
-                width: 100%;
+            width: 60vw;
+    
+            .container-cta{
+                margin-top: 5%;
+                margin-bottom: 5%;
+    
+                button{
+                    width: 100%;
+                }
+    
+            }
+        
+            img{
+                border-radius: 12px;
+                margin-right: 1em;
+                width: 90vw;
+                height: 90vw;
+                object-fit: contain;
+                object-position: center;
             }
 
         }
-    
-        img{
-            border-radius: 12px;
-            margin-right: 1em;
-            width: 90vw;
-            height: 90vw;
-            object-fit: contain;
-            object-position: center;
-        }
+
+      
     }
 }
 

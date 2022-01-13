@@ -88,7 +88,7 @@
             }
 
             .bio-caption{
-                font-size: 24px!important;
+                font-size: 18px!important;
                 line-height: 32px!important;
                 padding-right: 12vw!important;
             }
@@ -129,7 +129,7 @@
             width: 33vw;
 
             &-title{
-                font-size: 3em!important;
+                font-size: 2.5rem!important;
             }
         }
         
@@ -141,23 +141,36 @@
         }
 
         .desc-card-caption{
-            font-size: 1.5em!important;
+            font-size: 1.2rem!important;
         }
 
     }
 
+
+
     .projects{
-        padding: 3em!important;
         display: grid!important;
-        grid-template-columns: repeat(3, 3fr);
+        grid-template-columns: repeat(auto-fill, 50%);
+        
 
         .section-project{
+        //   width: 10%!important;
+             margin: 3em!important;
 
-            text-align: center;
+            
 
-            img{
-                width: 20vw!important;
-                height: 20vw!important;
+
+            .project-container{
+
+                img{
+                   
+                    width: 32vw!important;
+                    height: 32vw!important;
+                }
+
+                // button{
+                //     width: 40%!important;
+                // }
             }
 
         }

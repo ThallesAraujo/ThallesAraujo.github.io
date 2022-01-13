@@ -26,10 +26,11 @@ body{
 
     .subtitle{
         font-size: 3em;
+        text-transform: uppercase;
         color: $accent-color;
         font-family: $secondary-font;
         font-style: normal;
-        padding: 0 1rem;
+        padding: 1rem 1rem;
     }
 
     .logo-container{
