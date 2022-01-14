@@ -792,7 +792,6 @@ footer .footer-icons {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-left: 2rem;
   padding-top: 3em;
   cursor: pointer;
 }
