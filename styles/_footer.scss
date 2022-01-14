@@ -19,35 +19,22 @@ footer{
         align-items: flex-start;
         padding-left: 2rem;
         padding-top: 3em;
+        cursor: pointer;
         .social{
             margin-right: 10px;
-            border:2px solid $text-color;
+            background-color: $accent-color;
             display: flex;
             text-decoration: none;
             @include flex-justification;
             width: 50px;
             height: 50px;
-            border-radius: 8px;
-            transition: ease-in-out .5s;
-            transform: scale(1) translateX(-50%) translateY(-50%);
-
-            &:before {
-                content: "";
-                position: absolute;
-                background:$accent-color;
-                bottom: 50%;
-                left: 50%;
-                right: 50%;
-                top: 50%;
-                width: 0;
-                height: 0;
-                z-index: -1;
-                border-radius: 8px;
-                transition: ease-in-out .3s;
-                transform: scale(1) translateX(-50%) translateY(-50%);
-              }
-
+            border-radius: 8px 0px 8px 0px;
+            transition: ease-in-out .3s;
+     
               &:hover{
+
+                background:$highlight-color;
+
                   i{
                     color: $card-color;
                   }
@@ -60,11 +47,26 @@ footer{
               }
             
 
-            i{
-                color: $text-color;
-                font-size: 30px;
+            img{
+                width: 30px;
+                height: 30px;
             }
 
         }
+    }
+
+    .contatos{
+        display: flex;
+        flex-direction: column;
+
+        a{
+            color: $accent-color;
+            transition: ease-in-out .3s;
+
+            &:hover{
+                color: $highlight-color;
+            }
+        }
+
     }
 }

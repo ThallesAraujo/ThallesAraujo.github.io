@@ -153,7 +153,7 @@ header{
             font-family: $secondary-font;
 
             &.active{
-                color: $text-color;
+                color: $highlight-color;
             }
 
             &::after{
@@ -161,7 +161,7 @@ header{
                 display: block;
                 width: 0;
                 height: 2px;
-                background: $text-color;
+                background: $highlight-color;
                 transition: width .3s
             }
 
@@ -170,7 +170,7 @@ header{
             }
 
             &:hover{
-                color: $text-color;
+                color: $highlight-color;
             }
 
         }
